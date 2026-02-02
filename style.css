@@ -1,0 +1,152 @@
+:root {
+  --black: #0D0D0D;
+  --gunmetal: #181818;
+  --red: #D13C3C;
+  --white: #F5F5F5;
+  --grey: #9A9A9A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.page {
+  margin-bottom: 80px;
+}
+
+/* HERO */
+.hero h1 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.red {
+  color: var(--red);
+}
+
+.divider-red {
+  height: 2px;
+  width: 120px;
+  background: var(--red);
+  margin: 0 auto;
+}
+
+/* PROMPT BLOCK */
+.prompt-block {
+  background: var(--gunmetal);
+  border-left: 4px solid var(--red);
+  padding: 24px;
+  margin: 40px 0;
+}
+
+.prompt-block pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.copy-btn {
+  margin-top: 20px;
+  background: none;
+  border: 1px solid var(--grey);
+  color: var(--white);
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.copy-btn:hover {
+  border-color: var(--red);
+}
+
+/* USAGE */
+.usage h2 {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.usage-line {
+  padding: 12px 0;
+  border-bottom: 1px solid #2a2a2a;
+  color: var(--grey);
+}
+
+/* OBJECTIVES */
+.objectives h2 {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  margin-bottom: 24px;
+}
+
+.objective {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.label {
+  color: var(--red);
+  font-weight: 600;
+  min-width: 120px;
+}
+
+.text {
+  color: var(--white);
+}
+
+/* ETHICAL */
+.ethical {
+  border: 1px solid #2a2a2a;
+  padding: 24px;
+  margin: 48px 0;
+}
+
+.ethical h3 {
+  margin-top: 0;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--grey);
+}
+
+/* BONUS */
+.bonus h2 {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+
+.bonus blockquote {
+  margin: 20px 0;
+  padding-left: 16px;
+  border-left: 3px solid var(--red);
+  color: var(--white);
+}
+
+.final-line {
+  color: var(--grey);
+  margin-top: 12px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 22px;
+  }
+}
